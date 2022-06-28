@@ -4,7 +4,7 @@ import { ClientContainer, ClientCountry, ClientImg, ClientImgContainer, ClientNa
 const Client = (props) => {
   const { client } = props
   const { name, country, pic_url } = client
-  console.log(client)
+
   try{
     return (
       <ClientContainer>

@@ -1,9 +1,10 @@
 import React from 'react'
-import { orderItems } from './Data'
 import Order from './Order'
 import { OrderBoxContainer, OrderBoxTable, OrderBoxTableTd, OrderBoxTableTr, OrderBoxTop, OrderBoxTopA, OrderBoxTopH2 } from './OrdersBox'
 
 const OrderBox = (props) => {
+  
+  const orderItems = props['orderItems']
 
   return (
     <OrderBoxContainer>

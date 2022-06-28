@@ -4,11 +4,12 @@ import { Main as HomeMainContainer } from '../Main'
 import CardBox from './CardBox'
 import GraphBox from './GraphBox'
 import DetailsBox from './DetailsBox'
-import { orderItems } from './DetailsBox/OrdersBox/Data'
-import { orderClients } from './DetailsBox/ClientsBox/Data'
+import { HomeData } from './HomeData'
+
 
 const HomeMain = (props) => {
 
+  const { orderItems, orderClients } = HomeData
   const { menuToggle, handleMenuToggle, cardBoxItems } = props
 
   return (
