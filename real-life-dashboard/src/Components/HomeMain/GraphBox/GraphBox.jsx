@@ -20,4 +20,12 @@ export const GraphBoxContainer = styled.div`
         -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
         box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     }
+
+    @media (max-width: 991px){
+        & {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+    }
 `

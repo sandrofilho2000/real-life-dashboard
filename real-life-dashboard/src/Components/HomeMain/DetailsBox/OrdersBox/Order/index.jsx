@@ -1,10 +1,7 @@
 import React from 'react'
-import { OrderContainer, OrderStatus, OrderTd, OrderTr } from './Order'
+import { OrderContainer, OrderStatus, OrderTd } from './Order'
 
 const Order = ({name, price, payment, status}) => {
-    console.log(name)
-
-
 
     try{
         return (

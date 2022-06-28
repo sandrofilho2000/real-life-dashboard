@@ -10,4 +10,12 @@ export const DetailsBoxContainer = styled.div`
     grid-template-columns: 2fr 2fr;
     grid-gap: 30px;
     margin-top: 10px;
+
+    @media (max-width: 768px){
+        & {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+    }
 `

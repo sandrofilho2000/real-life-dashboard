@@ -5,7 +5,7 @@ import CardBox from './CardBox'
 import GraphBox from './GraphBox'
 import DetailsBox from './DetailsBox'
 import { orderItems } from './DetailsBox/OrdersBox/Data'
-
+import { orderClients } from './DetailsBox/ClientsBox/Data'
 
 const HomeMain = (props) => {
 
@@ -16,7 +16,7 @@ const HomeMain = (props) => {
         <TopMain handleMenuToggle={handleMenuToggle} />
         <CardBox cardBoxItems={cardBoxItems}/>
         <GraphBox/>
-        <DetailsBox orderItems={orderItems} />
+        <DetailsBox orderItems={orderItems} orderClients={orderClients} />
     </HomeMainContainer>
   )
 }

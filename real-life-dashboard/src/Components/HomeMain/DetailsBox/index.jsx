@@ -8,7 +8,7 @@ const DetailsBox = (props) => {
   return (
     <DetailsBoxContainer>
         <OrderBox orderItems={props['orderItems']} />
-        <ClientsBox/>
+        <ClientsBox orderClients={props['orderClients']} />
     </DetailsBoxContainer>
   )
 }

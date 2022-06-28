@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ClientBoxContainer = styled.div`
     position: relative;
-    display: -ms-grid;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     min-height: 500px;
     padding: 20px;
     background: white;
@@ -12,3 +12,23 @@ export const ClientBoxContainer = styled.div`
     border-radius: 20px;
 `
 
+export const ClienBoxTop = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 30px;
+`
+export const ClienBoxTopH2 = styled.h2`
+    font-weight: 600;
+    color: #20b042;
+`
+
+export const ClientBoxTable = styled.table`
+    
+`
