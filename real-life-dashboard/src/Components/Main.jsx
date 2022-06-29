@@ -35,7 +35,6 @@ export const Main = styled.div`
             right: 0;
             top: 10px;
             left: initial;
-            color: #fff;
             z-index: 10001;
         }
     }

@@ -6,7 +6,7 @@ import {darkMode} from '../../Pages/StylesScheme'
 
 export const SideMenuContainer = styled.div `
   position: fixed;
-  z-index: 9;
+  z-index: 3;
   width:  80px;
   height: 100%;
   background: ${darkMode['mainBg']};

@@ -70,7 +70,8 @@ export const TopMainSearchLabelInput = styled.input`
     font-size: 18px;
     padding-left: 35px;
     line-height: 40px;
-    background-color: transparent;
+    background-color: ${darkMode['mainBg']};
+    box-shadow: ${darkMode['boxShadow']};
     outline: none;
     border: 1px solid #fff;
 `
