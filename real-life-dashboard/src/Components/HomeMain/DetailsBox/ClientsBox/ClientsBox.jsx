@@ -26,7 +26,6 @@ export const ClienBoxTop = styled.div`
 `
 export const ClienBoxTopH2 = styled.h2`
     font-weight: 600;
-    color: #20b042;
 `
 
 export const ClientBoxTable = styled.table`

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
+import { darkMode } from '../../Pages/StylesScheme'
 
 
 
@@ -17,6 +18,10 @@ export const TopMainContainer = styled.div`
     -ms-flex-align: center;
     align-items: center;
     padding: 0 10px;
+
+    *{
+        color: ${darkMode['textColor']};
+    }
 `
 
 export const TopMainToggle = styled.div`
@@ -35,8 +40,6 @@ export const TopMainToggle = styled.div`
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
-
-
 `
 
 export const TopMainSearch = styled.div`
@@ -67,8 +70,9 @@ export const TopMainSearchLabelInput = styled.input`
     font-size: 18px;
     padding-left: 35px;
     line-height: 40px;
+    background-color: transparent;
     outline: none;
-    border: 1px solid #999;
+    border: 1px solid #fff;
 `
 
 

@@ -1,4 +1,9 @@
 import styled from "styled-components"
+import { darkMode } from '../../../Pages/StylesScheme'
+
+
+
+
 
 export const GraphBoxContainer = styled.div`
     position: relative;
@@ -9,16 +14,20 @@ export const GraphBoxContainer = styled.div`
     -ms-grid-columns: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
-    min-height: 200px;
+    min-height: 370px;
 
     & > div {
         position: relative;
         padding: 20px;
         width: 100%;
-        background: #fff;
+        background: ${darkMode['mainBg']};
         border-radius: 20px;
-        -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+        box-shadow: ${darkMode['boxShadow']};
+         
+        *{
+            margin: 0 auto;
+        }
+
     }
 
     @media (max-width: 991px){
@@ -26,6 +35,10 @@ export const GraphBoxContainer = styled.div`
             -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
             height: auto;
+
+            > div:last-of-type{
+                min-height: 350px;
+            }
         }
     }
 `

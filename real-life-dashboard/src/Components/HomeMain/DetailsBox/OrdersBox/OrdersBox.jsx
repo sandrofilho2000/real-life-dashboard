@@ -6,10 +6,7 @@ export const OrderBoxContainer = styled.div`
     display: -ms-grid;
     display: grid;
     min-height: 500px;
-    background: white;
     padding: 20px;
-    -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 `
 
@@ -27,7 +24,6 @@ export const OrderBoxTop = styled.div`
 
 export const OrderBoxTopH2 = styled.h2`
     font-weight: 600;
-    color: #20b042;
 `
 
 
@@ -38,7 +34,6 @@ export const OrderBoxTopA = styled(LinkR)`
     text-decoration: none;
     background: #20b042;
     border-radius: 6px;
-    color: #fff;
 `
 
 
@@ -69,7 +64,6 @@ export const OrderBoxTableTr = styled.tr`
 `
 
 export const OrderBoxTableTd = styled.td`
-    color: #222;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     &:nth-child(3) {

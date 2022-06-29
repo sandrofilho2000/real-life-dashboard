@@ -1,7 +1,7 @@
 export const menuItems = [
     {
         "active": true,
-        "title": "Home",
+        "title": "Painel",
         "icon_class": "home-outline",
         "link": "/"
     },

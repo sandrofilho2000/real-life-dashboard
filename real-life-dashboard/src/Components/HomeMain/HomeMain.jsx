@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
 
+
 export const CardBoxContainer = styled.div`
     position: relative;
     width: 100%;
@@ -24,7 +25,6 @@ export const CardBoxContainer = styled.div`
 
 export const CardContainer = styled.div `
     position: relative;
-    background: white;
     padding: 30px;
     border-radius: 20px;
     display: -webkit-box;
@@ -51,7 +51,6 @@ export const CardTextContainer = styled.div`
 `
 
 export const CardTextNumbers = styled.p`
-    color: #20b042;
     position: relative;
     font-weight: 500;
     font-size: 2.5em;

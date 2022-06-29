@@ -38,8 +38,8 @@ const Home = () => {
   return (
     <>
       <OverlayLoad/>
-      <SideMenu menuItems={menuItems} menuToggle={menuToggle}  />
-      <HomeMain menuToggle={menuToggle} cardBoxItems={CardBoxItems} handleMenuToggle={handleMenuToggle}  />
+      <SideMenu menuItems={menuItems} menuToggle={menuToggle} />
+      <HomeMain menuToggle={menuToggle} cardBoxItems={CardBoxItems} handleMenuToggle={handleMenuToggle} />
     </>
   )
 }

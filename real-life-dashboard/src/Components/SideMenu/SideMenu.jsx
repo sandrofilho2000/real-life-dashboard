@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
+import {darkMode} from '../../Pages/StylesScheme'
+
 
 export const SideMenuContainer = styled.div `
   position: fixed;
+  z-index: 9;
   width:  80px;
   height: 100%;
-  background: black;
-  border-left: 10px solid black;
+  background: ${darkMode['mainBg']};
+  border-left: 10px solid ${darkMode['mainBg']};
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
+  box-shadow: ${darkMode['boxShadow']};
 
   &.active{
     width: 300px;
@@ -54,11 +58,12 @@ export const SideMenuLi = styled.li `
     list-style: none;
 
     &:hover, &.hovered{
-      background-color: white;
+      background-color: #20b042 ;
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
+
       *{
-        color: #20b042 !important;
+        color: #fff !important;
       }
 
       a::before{
@@ -70,8 +75,8 @@ export const SideMenuLi = styled.li `
         height: 50px;
         border-radius: 50%;
         background: transparent;
-        -webkit-box-shadow: 35px 35px 0 10px white;
-        box-shadow: 35px 35px 0 10px white;
+        -webkit-box-shadow: 35px 35px 0 10px #20b042;
+        box-shadow: 35px 35px 0 10px #20b042;
         pointer-events: none;
         z-index: 999999;
       }
@@ -85,8 +90,8 @@ export const SideMenuLi = styled.li `
         height: 50px;
         border-radius: 50%;
         background: transparent;
-        -webkit-box-shadow: 35px -35px 0 10px white;
-        box-shadow: 35px -35px 0 10px white;
+        -webkit-box-shadow: 35px -35px 0 10px #20b042;
+        box-shadow: 35px -35px 0 10px #20b042;
         pointer-events: none;
       } 
     }
@@ -121,7 +126,7 @@ export const SideMenuA = styled(LinkR) `
 
     *{
       font-size: 1.75rem;
-      color: #b0986c;
+      color: ${darkMode['textColor']};
     }
 
     span{
@@ -130,8 +135,9 @@ export const SideMenuA = styled(LinkR) `
       min-width: 60px;
       height: 60px;
       text-align: center;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 16px;
+      font-weight: bold;
     } 
 `
 
