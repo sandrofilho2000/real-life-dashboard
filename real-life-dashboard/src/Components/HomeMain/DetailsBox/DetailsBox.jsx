@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darkMode } from "../../../Pages/StylesScheme";
+import { darkLightMode } from "../../../Pages/StylesScheme";
 export const DetailsBoxContainer = styled.div`
     position: relative;
     width: 100%;
@@ -12,10 +12,11 @@ export const DetailsBoxContainer = styled.div`
     margin-top: 10px;
 
     > div{
-        background-color: ${darkMode['mainBg']};
+        background-color: ${darkLightMode['mainBg']};
+        box-shadow: ${darkLightMode['boxShadow']};
 
         *{
-            color: ${darkMode['textColor']};
+            color: ${darkLightMode['textColor']};
         }
 
         a{

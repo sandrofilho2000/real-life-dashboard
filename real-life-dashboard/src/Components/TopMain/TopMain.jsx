@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
-import { darkMode } from '../../Pages/StylesScheme'
+import { darkLightMode } from '../../Pages/StylesScheme'
 
 
 
@@ -20,7 +20,7 @@ export const TopMainContainer = styled.div`
     padding: 0 10px;
 
     *{
-        color: ${darkMode['textColor']};
+        color: ${darkLightMode['textColor']};
     }
 `
 
@@ -70,8 +70,8 @@ export const TopMainSearchLabelInput = styled.input`
     font-size: 18px;
     padding-left: 35px;
     line-height: 40px;
-    background-color: ${darkMode['mainBg']};
-    box-shadow: ${darkMode['boxShadow']};
+    background-color: ${darkLightMode['mainBg']};
+    box-shadow: ${darkLightMode['boxShadow']};
     outline: none;
     border: 1px solid #fff;
 `

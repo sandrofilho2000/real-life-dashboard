@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { darkMode } from '../../../Pages/StylesScheme'
+import { darkLightMode } from '../../../Pages/StylesScheme'
 
 
 
@@ -20,9 +20,9 @@ export const GraphBoxContainer = styled.div`
         position: relative;
         padding: 20px;
         width: 100%;
-        background: ${darkMode['mainBg']};
+        background: ${darkLightMode['mainBg']};
         border-radius: 20px;
-        box-shadow: ${darkMode['boxShadow']};
+        box-shadow: ${darkLightMode['boxShadow']};
          
         *{
             margin: 0 auto;

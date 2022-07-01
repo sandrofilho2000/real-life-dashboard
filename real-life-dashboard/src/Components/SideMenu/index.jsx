@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import {  
     SideMenuContainer,
     SideMenuUl,
@@ -9,14 +10,14 @@ import {
     SideMenuLogo
 } from './SideMenu'
 
-
-
-
 import logo from '../../Images/logo.jpg'
 
-const SideMenu = (props) => {
-    
-    const {menuItems, menuToggle} = props
+import { menu_toggle } from '../../redux/actions/menuActions'
+
+const SideMenu = ({menuItems}) => {
+
+    const toggle = useSelector(state=>state)
+    const[menuTgl, setMenuTgl] = useState()
 
     const handleMouseOverMenu = (e) =>{
         document.querySelectorAll("li.hovered").forEach((li)=>{
@@ -25,9 +26,14 @@ const SideMenu = (props) => {
         e.currentTarget.classList.add("hovered")
     }
 
+    useEffect(()=>{
+        const menu_toggle_ls = localStorage.getItem("menuToggle")
+        if(menu_toggle_ls !== undefined) setMenuTgl(menu_toggle_ls)
+        else setMenuTgl(toggle['menuToggle']) 
+    })
 
     return (
-        <SideMenuContainer className={menuToggle} menuToggle={menuToggle} >
+        <SideMenuContainer className={menuTgl}>
             <SideMenuUl>
                 <SideMenuLi>
                     <SideMenuA className='logo' to="/">
@@ -49,7 +55,7 @@ const SideMenu = (props) => {
                             
                             return (
                                 
-                            <SideMenuLi  onMouseOver={handleMouseOverMenu} key={index}>
+                            <SideMenuLi onMouseOver={handleMouseOverMenu} key={index}>
                                 <SideMenuA to={link}>
                                     <SideMenuIcon>
                                         <ion-icon name={icon_class}></ion-icon>

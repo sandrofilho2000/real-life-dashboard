@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
-import {darkMode} from '../../Pages/StylesScheme'
+import {darkLightMode} from '../../Pages/StylesScheme'
 
 
 export const SideMenuContainer = styled.div `
@@ -9,12 +9,12 @@ export const SideMenuContainer = styled.div `
   z-index: 3;
   width:  80px;
   height: 100%;
-  background: ${darkMode['mainBg']};
-  border-left: 10px solid ${darkMode['mainBg']};
+  background: ${darkLightMode['mainBg']};
+  border-left: 10px solid ${darkLightMode['mainBg']};
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
-  box-shadow: ${darkMode['boxShadow']};
+  box-shadow: ${darkLightMode['boxShadow']};
 
   &.active{
     width: 300px;
@@ -126,7 +126,7 @@ export const SideMenuA = styled(LinkR) `
 
     *{
       font-size: 1.75rem;
-      color: ${darkMode['textColor']};
+      color: ${darkLightMode['textColor']};
     }
 
     span{

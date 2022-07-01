@@ -1,11 +1,11 @@
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
-import { darkMode } from "../../../../Pages/StylesScheme"
+import { darkLightMode } from "../../../../Pages/StylesScheme"
 
 export const CardContainer = styled.div `
     position: relative;
-    background: ${darkMode['mainBg']};
-    box-shadow: ${darkMode['boxShadow']};
+    background: ${darkLightMode['mainBg']};
+    box-shadow: ${darkLightMode['boxShadow']};
     padding: 30px;
     border-radius: 20px;
     display: -webkit-box;
@@ -38,7 +38,7 @@ export const CardTextNumbers = styled.p`
 `
 
 export const CardTextName = styled.p`
-    color: ${darkMode['textColor']};
+    color: ${darkLightMode['textColor']};
     font-size: 1.1em;
     margin-top: 5px;
 `
@@ -46,6 +46,6 @@ export const CardTextName = styled.p`
 export const CardIconContainer = styled.div`
     *{
         font-size: 3.5em;
-        color: ${darkMode['textColor']};
+        color: ${darkLightMode['textColor']};
     }
 `

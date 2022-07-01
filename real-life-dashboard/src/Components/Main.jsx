@@ -1,13 +1,13 @@
 import styled from "styled-components"
 import { Link as LinkR } from 'react-router-dom'
-import {darkMode} from '../Pages/StylesScheme'
+import {darkLightMode} from '../Pages/StylesScheme'
 
 export const Main = styled.div`
     position: absolute;
     min-width: calc(100vw - 80px);
     left: 80px;
     min-height: 100vh;
-    background: ${darkMode['secondBg']};
+    background: ${darkLightMode['secondBg']};
     -webkit-transition: .5s;
     transition: .5s;
     min-height: 100vh ;

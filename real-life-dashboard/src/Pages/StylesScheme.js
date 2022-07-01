@@ -1,3 +1,5 @@
+import React, {useEffect, useState} from 'react'
+
 export const stylesSchemes = {
     "main-bg": "#ffffff;",
     "second-bg": "#fafafb;",
@@ -30,13 +32,11 @@ export const stylesSchemes = {
     "transition-cubic": "cubic-bezier(0.175, 0.885, 0.32, 1.275);",
 }
 
-
-
-export const darkMode = {
-    "mainBg": stylesSchemes['main-bg-dark'],
-    "secondBg": stylesSchemes['second-bg-dark'],
-    "boxShadow": stylesSchemes['box-shadow-dark'],
-    "textColor": stylesSchemes["txt-color-dark"],
+export const darkLightMode = {
+    "mainBg": stylesSchemes['main-bg-light'],
+    "secondBg": stylesSchemes['second-bg-light'],
+    "boxShadow": stylesSchemes['box-shadow-light'],
+    "textColor": stylesSchemes["txt-color-light"],
 }
 
 export const lightMode = {
