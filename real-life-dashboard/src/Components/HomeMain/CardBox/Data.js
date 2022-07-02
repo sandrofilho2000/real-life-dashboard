@@ -1,29 +1,29 @@
 export const CardBoxItems = [
     {
         "active": true,
-        "title": "Daily Views",
+        "title": "Visitas diárias",
         "number": "1,604",
         "icon_class": "eye-outline",
     }
     ,
     {
         "active": true,
-        "title": "Sales",
+        "title": "Vendas",
         "number": "80",
         "icon_class": "cart-outline",
     }
     ,
     {
         "active": true,
-        "title": "Comments",
+        "title": "Comentários",
         "number": "284",
         "icon_class": "chatbubbles-outline",
     }   
     ,
     {
         "active": true,
-        "title": "Earning",
-        "number": "$7,842",
+        "title": "Faturamento",
+        "number": "R$7,842",
         "icon_class": "cash-outline",
     }   
 ]
