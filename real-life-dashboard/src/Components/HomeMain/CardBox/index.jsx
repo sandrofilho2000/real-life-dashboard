@@ -6,7 +6,7 @@ const CardBox = (props) => {
     const { cardBoxItems } = props
 
     return (
-        <CardBoxContainer>
+        <CardBoxContainer className='cardBoxContainer dark'>
             {
                 cardBoxItems.map((card, index)=>{
                     return (
@@ -14,9 +14,6 @@ const CardBox = (props) => {
                     )
                 })
             } 
-
-            
-
         </CardBoxContainer>
     )
 }

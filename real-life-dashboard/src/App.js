@@ -1,4 +1,5 @@
-import './App.css';
+import '../src/assets/css/index.css'
+import '../src/assets/css/theme.css'
 import Layout from './Components/Layout/Layout';
 import { Provider } from 'react-redux';
 import  store from './redux/reducers'

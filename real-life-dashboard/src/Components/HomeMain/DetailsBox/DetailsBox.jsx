@@ -10,20 +10,12 @@ export const DetailsBoxContainer = styled.div`
     grid-template-columns: 2fr 2fr;
     grid-gap: 30px;
     margin-top: 10px;
-
+    
     > div{
-        background-color: ${darkLightMode['mainBg']};
-        box-shadow: ${darkLightMode['boxShadow']};
-
-        *{
-            color: ${darkLightMode['textColor']};
-        }
-
-        a{
-            color: #fff;
-        }
-
+        background-color: var(--main-bg);
+        box-shadow: var(--box-shadow);
     }
+
 
     @media (max-width: 768px){
         & {

@@ -9,12 +9,16 @@ export const SideMenuContainer = styled.div `
   z-index: 3;
   width:  80px;
   height: 100%;
-  background: ${darkLightMode['mainBg']};
-  border-left: 10px solid ${darkLightMode['mainBg']};
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   overflow: hidden;
-  box-shadow: ${darkLightMode['boxShadow']};
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  border-left: 10px solid var(--main-bg);
+  
+  *{
+    color: var(--txt-color);
+  }
 
   &.active{
     width: 300px;
@@ -36,7 +40,7 @@ export const SideMenuContainer = styled.div `
       left: -100%;
       z-index: 1000;
     }
-    &.active{
+    &.menu_active{
       left: 0;
       width: 100vw;
     }
@@ -44,6 +48,7 @@ export const SideMenuContainer = styled.div `
 
 
 `
+
 
 export const SideMenuUl = styled.ul `
     position: absolute;
@@ -58,12 +63,12 @@ export const SideMenuLi = styled.li `
     list-style: none;
 
     &:hover, &.hovered{
-      background-color: #20b042 ;
+      background-color: #20b042 !important;
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
 
       *{
-        color: #fff !important;
+        color: #ffffff !important;
       }
 
       a::before{
@@ -106,7 +111,6 @@ export const SideMenuLi = styled.li `
 
 `
 
-
 export const SideMenuA = styled(LinkR) `
     position: relative;
     width: 100%;
@@ -126,7 +130,6 @@ export const SideMenuA = styled(LinkR) `
 
     *{
       font-size: 1.75rem;
-      color: ${darkLightMode['textColor']};
     }
 
     span{
@@ -152,6 +155,7 @@ export const SideMenuIcon = styled.span`
     text-align: center;
 
 `
+
 export const SideMenuTitle = styled.span`
     position: relative;
     display: block;

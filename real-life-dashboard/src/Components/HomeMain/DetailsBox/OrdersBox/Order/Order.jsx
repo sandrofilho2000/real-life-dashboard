@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const OrderContainer = styled.tr`
     &:hover{
-        background-color: #20b042;
+        background-color: #20b042 !important;
 
         *{
-            color: white;
+            color: white !important;
         }
     }
 `
 
 export const OrderTd = styled.td`
     padding: 10px;
-    color: #111;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     &:nth-child(3) {

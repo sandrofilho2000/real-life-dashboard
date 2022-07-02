@@ -18,10 +18,8 @@ export const TopMainContainer = styled.div`
     -ms-flex-align: center;
     align-items: center;
     padding: 0 10px;
-
-    *{
-        color: ${darkLightMode['textColor']};
-    }
+    border-radius: var(--border-radius);
+    color: var(--txt-color);
 `
 
 export const TopMainToggle = styled.div`
@@ -70,27 +68,41 @@ export const TopMainSearchLabelInput = styled.input`
     font-size: 18px;
     padding-left: 35px;
     line-height: 40px;
-    background-color: ${darkLightMode['mainBg']};
-    box-shadow: ${darkLightMode['boxShadow']};
     outline: none;
-    border: 1px solid #fff;
+    border: 1px solid var(--txt-color);
+    box-shadow: var(--box-shadow);
+    background-color: transparent;
+
 `
 
 
-export const TopMainUserContainer = styled(LinkR) `
+export const TopMainUserThemeContainer = styled.div `
     position: relative;
-    width: 40px;
+    width: 90px;
     height: 40px;
-    border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ion-icon{
+        display: block;
+        font-size: 46px;
+        position: absolute;
+        right: 0;
+    }
+    `
+
+export const TopMainPicContainer = styled(LinkR)`
 `
 export const TopMainUserContainerPic = styled.img `
+    border-radius: 50%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     -o-object-fit: cover;
     object-fit: cover;
 `

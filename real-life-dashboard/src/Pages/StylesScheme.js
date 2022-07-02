@@ -33,10 +33,10 @@ export const stylesSchemes = {
 }
 
 export const darkLightMode = {
-    "mainBg": stylesSchemes['main-bg-light'],
-    "secondBg": stylesSchemes['second-bg-light'],
-    "boxShadow": stylesSchemes['box-shadow-light'],
-    "textColor": stylesSchemes["txt-color-light"],
+    "mainBg": stylesSchemes['main-bg-dark'],
+    "secondBg": stylesSchemes['second-bg-dark'],
+    "boxShadow": stylesSchemes['box-shadow-dark'],
+    "textColor": stylesSchemes["txt-color-dark"],
 }
 
 export const lightMode = {

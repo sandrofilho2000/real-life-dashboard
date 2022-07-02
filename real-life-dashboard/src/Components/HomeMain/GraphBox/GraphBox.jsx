@@ -15,20 +15,22 @@ export const GraphBoxContainer = styled.div`
     grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
     min-height: 370px;
-
+    
     & > div {
+    
+        background-color: var(--main-bg);
+        box-shadow: var(--box-shadow);
         position: relative;
         padding: 20px;
         width: 100%;
-        background: ${darkLightMode['mainBg']};
         border-radius: 20px;
-        box-shadow: ${darkLightMode['boxShadow']};
          
         *{
             margin: 0 auto;
         }
 
     }
+
 
     @media (max-width: 991px){
         & {

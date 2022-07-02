@@ -9,22 +9,36 @@ import { useSelector, useDispatch } from 'react-redux'
 
 const HomeMain = ({ cardBoxItems }) => {
 
-  const toggle = useSelector(state=>state)
+  const data = useSelector(state=>state)
+  const menu = useSelector(state=>state['data_menu'])
+
+  const currThemeMode = data['currTheme']
+
+
+  const[themeNameTgl, setThemeNameTgl] = useState()
   const[menuTgl, setMenuTgl] = useState()
 
   useEffect(()=>{
+    
       const menu_toggle_ls = localStorage.getItem("menuToggle")
       if(menu_toggle_ls !== undefined) setMenuTgl(menu_toggle_ls)
-      else setMenuTgl(toggle['menuToggle']) 
+      else setMenuTgl(menu) 
+
+
+      /* SET THEME MODE */
+      const theme_toggle_ls = localStorage.getItem("themeToggle")
+      if(theme_toggle_ls !== undefined) setThemeNameTgl(theme_toggle_ls)
+      else setThemeNameTgl(currThemeMode)
+
   })
 
   const { orderItems, orderClients } = HomeData
-  
+
   return (
-    <HomeMainContainer className={menuTgl}>
+    <HomeMainContainer className={menuTgl == 'true' ? 'active' : 'not_active'}>
         <TopMain />
         <CardBox cardBoxItems={cardBoxItems}/>
-        <GraphBox/>
+        <GraphBox />
         <DetailsBox orderItems={orderItems} orderClients={orderClients} />
     </HomeMainContainer>
   )

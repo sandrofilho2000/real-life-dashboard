@@ -7,12 +7,18 @@ export const Main = styled.div`
     min-width: calc(100vw - 80px);
     left: 80px;
     min-height: 100vh;
-    background: ${darkLightMode['secondBg']};
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .3s;
+    transition: .3s;
     min-height: 100vh ;
     height: 100%;
     overflow: auto;
+    background-color: var(--second-bg);
+    
+    *{
+        color: var(--txt-color);
+    }
+
+
     &.active{
         left: 300px;
         min-width: calc(100vw - 300px);
@@ -30,7 +36,7 @@ export const Main = styled.div`
 
     @media (max-width: 500px){
 
-        &.active .toggle *{
+        &.menu_active .toggle *{
             position: fixed;
             right: 0;
             top: 10px;

@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import { Link as LinkR } from 'react-router-dom'
-import { darkLightMode } from "../../../Pages/StylesScheme"
 
 export const CardBoxContainer = styled.div`
     position: relative;
@@ -21,9 +19,7 @@ export const CardBoxContainer = styled.div`
         }
     }
 
-    *{
-        color: ${darkLightMode['textColor']};
-    }
+
 
 `
 

@@ -12,12 +12,11 @@ import {
 
 import logo from '../../Images/logo.jpg'
 
-import { menu_toggle } from '../../redux/actions/menuActions'
-
 const SideMenu = ({menuItems}) => {
 
-    const toggle = useSelector(state=>state)
-    const[menuTgl, setMenuTgl] = useState()
+    const menu = useSelector(state=>state['data_menu'])
+
+    const[menuTgl, setMenuTgl] = useState() 
 
     const handleMouseOverMenu = (e) =>{
         document.querySelectorAll("li.hovered").forEach((li)=>{
@@ -27,13 +26,15 @@ const SideMenu = ({menuItems}) => {
     }
 
     useEffect(()=>{
+        /* SET MENU TOGGLE */ 
         const menu_toggle_ls = localStorage.getItem("menuToggle")
         if(menu_toggle_ls !== undefined) setMenuTgl(menu_toggle_ls)
-        else setMenuTgl(toggle['menuToggle']) 
+        else setMenuTgl(menu) 
     })
 
+
     return (
-        <SideMenuContainer className={menuTgl}>
+        <SideMenuContainer className={menuTgl == 'true' ? 'active' : 'not_active'} >
             <SideMenuUl>
                 <SideMenuLi>
                     <SideMenuA className='logo' to="/">

@@ -9,7 +9,7 @@ export const ClientContainer = styled.tr`
         background-color: #20b042;
 
         *{
-            color: #fff;
+            color: #ffffff !important;
         }
     }
 `

@@ -32,8 +32,9 @@ export const OrderBoxTopA = styled(LinkR)`
     position: relative;
     padding: 5px 10px;
     text-decoration: none;
-    background: #20b042;
+    background-color: #20b042 !important;
     border-radius: 6px;
+    color: #ffffff !important;
 `
 
 

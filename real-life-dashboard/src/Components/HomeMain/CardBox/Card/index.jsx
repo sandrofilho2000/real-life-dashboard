@@ -5,7 +5,7 @@ import { CardContainer, CardIconContainer, CardTextContainer, CardTextName, Card
 const Card = ({card}) => {
         const { number, title, icon_class } = card
         return (
-          <CardContainer>
+          <CardContainer className='cardItem'>
               <CardTextContainer>
                   <CardTextNumbers>
                   {number}

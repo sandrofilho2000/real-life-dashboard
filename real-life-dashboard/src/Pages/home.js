@@ -4,6 +4,7 @@ import OverlayLoad from '../Components/OverlayLoad'
 import SideMenu from '../Components/SideMenu'
 import { menuItems } from '../Components/SideMenu/Data'
 import { CardBoxItems } from '../Components/HomeMain/CardBox/Data'
+import ThemeMenu from '../Components/ThemeMenu'
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
       <OverlayLoad/>
       <SideMenu menuItems={menuItems} />
       <HomeMain cardBoxItems={CardBoxItems} />
+      <ThemeMenu/>
     </>
   )
 }

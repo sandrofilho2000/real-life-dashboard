@@ -4,8 +4,6 @@ import { darkLightMode } from "../../../../Pages/StylesScheme"
 
 export const CardContainer = styled.div `
     position: relative;
-    background: ${darkLightMode['mainBg']};
-    box-shadow: ${darkLightMode['boxShadow']};
     padding: 30px;
     border-radius: 20px;
     display: -webkit-box;
@@ -15,14 +13,15 @@ export const CardContainer = styled.div `
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
     
     &:hover{
-        background: #20b042;
+        background-color: #20b042 !important;
 
         *{
-            color: #fff;
+            color: #fff !important;
         }
     }
 `
@@ -38,7 +37,6 @@ export const CardTextNumbers = styled.p`
 `
 
 export const CardTextName = styled.p`
-    color: ${darkLightMode['textColor']};
     font-size: 1.1em;
     margin-top: 5px;
 `
@@ -46,6 +44,5 @@ export const CardTextName = styled.p`
 export const CardIconContainer = styled.div`
     *{
         font-size: 3.5em;
-        color: ${darkLightMode['textColor']};
     }
 `

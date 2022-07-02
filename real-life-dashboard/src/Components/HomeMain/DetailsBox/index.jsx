@@ -5,7 +5,7 @@ import OrderBox from './OrdersBox'
 
 const DetailsBox = (props) => {
   return (
-    <DetailsBoxContainer>
+    <DetailsBoxContainer className='detailBoxContainer light'>
         <OrderBox orderItems={props['orderItems']} />
         <ClientsBox orderClients={props['orderClients']} />
     </DetailsBoxContainer>
