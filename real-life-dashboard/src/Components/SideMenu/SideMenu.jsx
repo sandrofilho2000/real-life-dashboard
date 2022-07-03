@@ -40,7 +40,7 @@ export const SideMenuContainer = styled.div `
       left: -100%;
       z-index: 1000;
     }
-    &.menu_active{
+    &.active{
       left: 0;
       width: 100vw;
     }

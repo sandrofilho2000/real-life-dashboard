@@ -38,6 +38,7 @@ export const TopMainToggle = styled.div`
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
+
 `
 
 export const TopMainSearch = styled.div`

@@ -36,7 +36,7 @@ export const Main = styled.div`
 
     @media (max-width: 500px){
 
-        &.menu_active .toggle *{
+        &.active .toggle *{
             position: fixed;
             right: 0;
             top: 10px;

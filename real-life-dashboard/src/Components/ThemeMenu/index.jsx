@@ -7,7 +7,9 @@ import { theme_toggle, open_theme_menu } from '../../redux/actions/themeActions'
 
 const ThemeMenu = () => {
 
-  const theme_open = useSelector(state=>state['data_theme_open'])
+  const theme_open = useSelector(state=>state['data_theme_open']) 
+
+  const theme = useSelector(state=>state['currTheme'])
 
   const dispatch = useDispatch()
 
@@ -15,7 +17,9 @@ const ThemeMenu = () => {
 
   const setThemeToggle = (theme) =>{
 
-    var new_theme = theme == 'theme-mode-dark' ? 'theme-mode-light' : 'theme-mode-dark'
+    console.log(theme)
+
+    var new_theme = theme == 'theme-mode-dark' || theme == undefined ? 'theme-mode-light' : 'theme-mode-dark'
     
     setThemeTgl(new_theme)
     

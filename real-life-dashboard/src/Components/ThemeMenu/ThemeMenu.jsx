@@ -15,6 +15,29 @@ export const ThemeMenuContainer = styled.div`
     &.active{
         right: 0px;
     }
+
+    @media (max-width: 991px){
+    &{
+      right: -300px;
+    }
+    &.active{
+      width: 300px;
+      right: 0;
+    }
+    }
+
+    @media (max-width: 500px){
+        &{
+        width: 100vw;
+        right: -100%;
+        z-index: 1000;
+        }
+        &.active{
+        right: 0;
+        width: 100vw;
+        }
+    }
+
 `
 
 export const ThemeMenuContainerTop = styled.div`
