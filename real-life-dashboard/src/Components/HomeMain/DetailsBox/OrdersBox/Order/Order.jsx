@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const OrderContainer = styled.tr`
     &:hover{
-        background-color: #20b042 !important;
+        background-color: var(--main-color) !important;
 
         *{
             color: white !important;

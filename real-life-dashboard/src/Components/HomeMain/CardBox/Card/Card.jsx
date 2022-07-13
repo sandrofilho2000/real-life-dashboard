@@ -18,7 +18,7 @@ export const CardContainer = styled.div `
     border-radius: var(--border-radius);
     
     &:hover{
-        background-color: #20b042 !important;
+        background-color: var(--main-color) !important;
 
         *{
             color: #fff !important;

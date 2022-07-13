@@ -5,6 +5,7 @@ const INITIAL_STATE = {
     'menuToggle': true,
     'themeOpen': false,
     'currTheme': 'theme-mode-dark',
+    'currColor': 'cyan'
 }
 
 export const dashReducers = (state = INITIAL_STATE, actions) =>{
@@ -14,6 +15,9 @@ export const dashReducers = (state = INITIAL_STATE, actions) =>{
         
         case "SET_THEME_TOGGLE":
             return { ...state, data: actions.theme}
+        
+        case "SET_COLOR_TOGGLE":
+            return { ...state, data: actions.color}
 
         case "OPEN_THEME_MENU":
             return { ...state, data_theme_open: actions.open_theme}

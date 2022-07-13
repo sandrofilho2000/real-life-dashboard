@@ -63,7 +63,7 @@ export const SideMenuLi = styled.li `
     list-style: none;
 
     &:hover, &.hovered{
-      background-color: #20b042 !important;
+      background-color: var(--main-color) !important;
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
 
@@ -80,8 +80,8 @@ export const SideMenuLi = styled.li `
         height: 50px;
         border-radius: 50%;
         background: transparent;
-        -webkit-box-shadow: 35px 35px 0 10px #20b042;
-        box-shadow: 35px 35px 0 10px #20b042;
+        -webkit-box-shadow: 35px 35px 0 10px var(--main-color);
+        box-shadow: 35px 35px 0 10px var(--main-color);
         pointer-events: none;
         z-index: 999999;
       }
@@ -95,8 +95,8 @@ export const SideMenuLi = styled.li `
         height: 50px;
         border-radius: 50%;
         background: transparent;
-        -webkit-box-shadow: 35px -35px 0 10px #20b042;
-        box-shadow: 35px -35px 0 10px #20b042;
+        -webkit-box-shadow: 35px -35px 0 10px var(--main-color);
+        box-shadow: 35px -35px 0 10px var(--main-color);
         pointer-events: none;
       } 
     }

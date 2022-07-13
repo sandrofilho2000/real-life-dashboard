@@ -6,7 +6,7 @@ export const ClientContainer = styled.tr`
     cursor: pointer;
     
     &:hover{
-        background-color: #20b042;
+        background-color: var(--main-color);
 
         *{
             color: #ffffff !important;
